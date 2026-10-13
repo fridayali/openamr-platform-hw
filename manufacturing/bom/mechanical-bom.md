@@ -52,11 +52,23 @@ The following components are used in the assemblies:
 - **Screwed spacer sleeve:** TFF-M3/25 FIX&FASTEN
 - **BLDC Motor:** Z4BLD60-24GN-30S/4GN 25K 
 - **Laser range scanner:** RPLIDAR S3 (S3M1-R2), 2.0 navigation LiDAR, 4 × M2.5 (screw engagement ≤ 4 mm). Legacy (existing robot): RPLIDAR A1-A1M8
-- **LiDAR spacer plate:** 7.1 mm, on the existing 10 mm standoffs of the A1 bracket, under the S3, so the S3 scan plane sits at the A1 scan-plane height, 222.0 mm above the floor (BOM Issue 7.7 MEC-008)
+- **LiDAR mount spacer:** MMP.07.00.00.002, **20 mm** thick, 3D printed (see below), under the S3; the S3 base sits 194 mm above the floor (CAD Rev B). Was a 7.1 mm spacer plate on the 10 mm standoffs of the A1 bracket (BOM Issue 7.7 MEC-008), superseded by CAD Rev B
 - **Camera module:** NVision Assem
 - **Proximity sensor:** E18-D80NK
 - **US sensor:** JSN-SR04T
 - **LED module:** 3 LED RGB Module 0.72W SWP
+
+## 3D-printed parts
+
+FDM print in PETG, at least 4 perimeters and 40 % infill. STEP and STL are in
+`mechanical/cad/production_files`.
+
+| Part number | Name | Qty | Size (mm) | Notes |
+|---|---|---|---|---|
+| MMP.01.00.00.003 | Camera mount | 1 | 144 x 42 x 32 | Orbbec Gemini 336L, 10° up face |
+| MMP.00.00.00.005 | TF-Luna mount | 4 | 52 x 9 x 23 | Front and back panels, y ±130 mm; 10° sensor face |
+| MMP.00.00.00.006 | Ultrasonic mount | 2 | 55 x 40 x 32 | MaxSonar WR, front and back panel centre |
+| MMP.07.00.00.002 | LiDAR mount spacer | 1 | 80 x 70 x **20** | Under the RPLIDAR S3 |
 
 __________________________________________________________
 
