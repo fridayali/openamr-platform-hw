@@ -44,17 +44,22 @@ All notable changes to this repository are documented here. Dates are ISO-8601.
 
 ### To do before release
 - CAD Rev B open items:
-  - Spacers and M4 heat-set inserts are not modelled yet; exact lengths will go into the drawings
-    and `manufacturing/bom/mechanical-bom.md`.
+  - Base plate: to be discussed (motor driver holes and further changes).
+  - Electronics bracket MMP.04.00.00.002 needs approval.
+  - Motors will change when the new motor CAD arrives.
+  - Many mounting fasteners are missing (heat-set inserts, spacers, screws); they will be added
+    after the SW (robot model) update, with exact lengths in the drawings and
+    `manufacturing/bom/mechanical-bom.md`.
   - MB7060 holes are ⌀29.46; P-03 rev19.0 item 19 asks for ⌀27.5 (3/4 in NPS lock nut).
   - TF-Luna openings are 30 x 23 mm; P-03 rev19.0 item 19 asks for ⌀22 holes. The TF-Luna mount
     face is 10°; the screening value is 20° down.
   - Camera opening centre is 144.3 mm above the floor and 0.37 mm off the centreline; the
     decision is 142.5 mm on the centreline. The camera mount part still has ⌀4.7 holes.
   - Electronics bracket bend radius is R2.0; the repository rule for 2 mm sheet is R2.4 (K 0.47).
-    No DXF flat patterns yet for the electronics bracket; the panel DXFs are face outlines.
-  - Battery pack (8 cells) is placed only, no BMS model and no fixings; base plate holes for
-    the motor driver are not all added yet.
+    Flat-pattern DXFs are missing (the panel DXFs are face outlines, none yet for the
+    electronics bracket); they will follow after the SW push.
+  - Battery pack (8 cells) is placed only and not fixed; the fixing waits for the BMS CAD.
+    Base plate holes for the motor driver are not all added yet.
   - Panel PDF drawings are still Rev A.
 - Populate or clearly scope the empty `mechanical/`, CAD, and PCB directories.
 - Physically verify the track (tape measure) to reconcile firmware 0.46 m vs CAD 0.4075 m.
